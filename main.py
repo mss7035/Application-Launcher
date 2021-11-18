@@ -1,5 +1,6 @@
 
-import actions, auth;
+import actions;
+from Authentication import auth;
 
 # Variables to be initizialized upon start.
 notImplemented = "(Currently not implemented.)";
@@ -7,7 +8,7 @@ notImplemented = "(Currently not implemented.)";
 actions.clear();
 
 # Version of the program. Set every time there is a new update!
-version = "0.0.1a"
+version = "0.0.1_1a"
 
 print(f"""---Application Launcher v{version}---
 """)
