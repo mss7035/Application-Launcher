@@ -33,8 +33,9 @@ while True:
   if command == "":
     pass;
 
-  elif command == "login":
+  elif command == "login": # This will eventually be used to open a user application that will give all of the options regarding your user status
     user = auth.login();
+
 
   elif command == "applist":
     actions.applist();
