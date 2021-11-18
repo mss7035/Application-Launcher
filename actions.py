@@ -10,8 +10,10 @@ def motd():
   except FileNotFoundError:
     print("Error. MOTD not found.")
 
+
 def applist():
   print(notImplemented)
+
 
 def help():
   try:
@@ -20,8 +22,10 @@ def help():
   except FileNotFoundError:
     print("--> No guide present."); print()
 
+
 def app_upgrade():
   print(notImplemented)
+
 
 def runtime_upgrade():
   print(notImplemented); print()
@@ -41,8 +45,16 @@ def runtime_upgrade():
     else:
       print("--> Either this Linux distribution isn't listed or doesn't exist."); print()
 
+
 def clear():
   clear = "cls"
   if os.name == "posix":
     clear = "clear"
   os.system(clear)
+
+
+def quit(user):
+    if user == "":
+      print("Exit.")
+    else:
+      print(f"Exit user '{user}'.")

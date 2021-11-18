@@ -29,3 +29,8 @@ init()
 
 # then use Termcolor for all colored text output
 print(colored('Hello, World!', 'green', 'on_red'))
+
+###
+
+from termcolor import colored, cprint
+cprint('\nJames Everleigh', 'red', attrs=['blink'])

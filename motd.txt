@@ -2,5 +2,4 @@
     and is FAR from complete, although this is a project
     that may last indefintely so we will see how this goes.
 
---> An RSS feed will be displayed up here at some point,
-    along with the data and time and perhaps notifications.
+--> There will eventually be features listed below that will have actual functions.
