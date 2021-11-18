@@ -1,6 +1,12 @@
+
 -->Valid commands:
 
+  'login' > Creates temporary username. Functionality will change later.
+  'notifcations' > Displays notifications, currently unimplemented.
+  'rss' > Displays RSS feeds, currently unimplemented.
+  'applist' > Displays list of valid apps, currently unimplemented.
   'help' > Displays this message.
+  'app_upgrade' > Updates the application.
+  'runtime_upgrade' > Updates the Python runtime. 
   'clear' > Clears the terminal.
-  'login' > Logs in the user. Functionality will change later.
   'quit' > Exits the program.
