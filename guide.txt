@@ -1,4 +1,5 @@
 --> Valid commands:
+
   'login' - Creates temporary username. Functionality will change later.
   'notifcations' - Displays notifications, currently unimplemented.
   'rss' - Displays RSS feeds, currently unimplemented.

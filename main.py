@@ -6,16 +6,15 @@ from termcolor import colored
 
 # Variables to be initizialized upon start.
 
-version = "0.0.1_4a"
-buildDate = "11/18/2021, 10:34am"
+version = "0.0.1_5a"
 today = datetime.datetime.now()
-notificationCount = 0 # Currently unimplemented.
-rssCount = 0 # Currently unimplemented.
+#notificationCount = 0 # Currently unimplemented.
+#rssCount = 0 # Currently unimplemented.
 missingCommand = "--> Error: Command not found, but exists in 'actions' file."
 
-"""
 #Displays message if there are any new notifications or RSS messages. Will change functionality later.
 
+"""
 newMessages = ""
 if notificationCount + rssCount == 0:
   newMessages = colored("<!> No new messages.", "blue")
@@ -39,9 +38,10 @@ if notificationCount > 0:
 
 if rssCount > 0:
   rssCount = colored(rssCount, "green")
+"""
 
 # Status settings, eventually will be able to tell online/offline status based on network connectivity.
-"""
+
 statusOnline = colored("Online", "blue")
 statusOffline = colored("Offline", "red")
 statusHidden = colored("Hidden", attrs = ["dark"])
@@ -56,7 +56,7 @@ print("--> Enter 'help' for commands."); print()
 print(f"Date: {today.month}/{today.day}/{today.year}")
 #print(f"Notifications: {notificationCount}")
 #print(f"RSS Feeds: {rssCount}")
-print(f"Status: {status}")
+print(f"Status: {status}"); print()
 
 #print(newMessages)
 
@@ -123,7 +123,7 @@ while True:
       print(missingCommand)
 
 
-  elif command == "quit": # Will change later.
+  elif command == "quit" or command == "exit": # Will change later.
     try:
       actions.quit(user)
     except AttributeError:
@@ -133,7 +133,7 @@ while True:
 
   elif command == "test":
     try:
-      import testing
+      from Testing import testing
     except ModuleNotFoundError:
       print("--> No testing script was found.")
 

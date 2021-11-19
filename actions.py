@@ -8,7 +8,7 @@ def motd():
     with open("motd.txt") as file:
       print(file.read())
   except FileNotFoundError:
-    print("Error. MOTD not found.")
+    print("Error: MOTD not found.")
 
 
 def applist():
