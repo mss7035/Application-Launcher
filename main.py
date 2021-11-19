@@ -6,7 +6,7 @@ from termcolor import colored
 
 # Variables to be initizialized upon start.
 
-version = "0.0.1_5a"
+version = "0.0.1_4a"
 today = datetime.datetime.now()
 #notificationCount = 0 # Currently unimplemented.
 #rssCount = 0 # Currently unimplemented.
